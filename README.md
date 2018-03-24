@@ -1,4 +1,4 @@
-Proyecto base
+Repositorio de Ezequiel Ledesma
 =============
 
 La carpeta ejercicio0 contiene un ejemplo de lo que es el punto de partida para los demás ejercicios.
