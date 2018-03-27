@@ -2,8 +2,9 @@ package fibo;
 
 import junit.framework.Assert;
 
-import org.junit.Test;
+import static org.junit.Assert.assertArrayEquals;
 
+import org.junit.Test;
 
 public class fiboTest {
 
@@ -34,6 +35,11 @@ public class fiboTest {
 		fibo fi = new fibo();
 		Assert.assertEquals(55,fi.fibonacci(10));
 	}
-}
+	@Test
+	public void prueba5() {
+		fibo fi = new fibo();
+		Assert.assertEquals(-1,fi.fibonacci(-1));
+	}
 
+}
 

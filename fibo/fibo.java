@@ -6,15 +6,17 @@ public class fibo{
     public String nombre;
  
     
+    
     public fibo(String nombre, int tamano){
         this.nombre = nombre;
         this.tamano = tamano;
     }
     
- 
+  // contructor para probar en los test
     fibo() {
     } 
     
+  // metodo para ser utilizado en clase main y deolver la serir de fibonnaci
     public void mostrarSerie(){
     System.out.println(nombre+" de tamaño "+tamano+":");
         for (int i = 0; i <= tamano; i++) {
@@ -23,6 +25,7 @@ public class fibo{
        System.out.println();
     }
 
+    //funcion fibonacci
 	public int fibonacci(int n)
 		
 	{
@@ -41,5 +44,4 @@ public class fibo{
         }
     }
 
-
-   }
+ }
