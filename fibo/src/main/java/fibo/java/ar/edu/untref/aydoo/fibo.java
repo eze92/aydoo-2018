@@ -1,4 +1,4 @@
-package fibo;
+package fibo.java.ar.edu.untref.aydoo;
 
 public class fibo{
 
