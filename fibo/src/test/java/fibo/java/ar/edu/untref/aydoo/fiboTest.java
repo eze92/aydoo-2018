@@ -1,8 +1,9 @@
-package fibo.java.ar.edu.untref.aydoo;
+package ar.edu.untref.aydoo;
 
 import junit.framework.Assert;
 
 import org.junit.Test;
+
 
 public class fiboTest {
 
