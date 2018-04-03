@@ -22,6 +22,12 @@ public class Vaso {
 		}
 		return false;
 	}
+	public void agregarTe(boolean unTe) {
+		this.te = unTe;
+	}
 
+	public boolean tieneTe() {
+		 return this.te;
+  }
 
 }
