@@ -5,8 +5,11 @@ public class MaquinaExpendedoraDeBebidas {
 	
 	
 	public void hacerCafeConLecheConNDeAzucar(Vaso unVaso, int cantidadAzucar) {
+		boolean unCafe = true;
 		unVaso.agregarAzucar(cantidadAzucar);
 		unVaso.getCantidadDeAzucar();
+		unVaso.agregarCafe(unCafe);
+		unVaso.tieneCafe();
 		
 	}
 

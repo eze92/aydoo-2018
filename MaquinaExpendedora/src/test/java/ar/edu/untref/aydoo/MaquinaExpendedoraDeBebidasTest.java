@@ -13,7 +13,7 @@ public class MaquinaExpendedoraDeBebidasTest {
         maquinaExpendedoraDeBebidas.hacerCafeConLecheConNDeAzucar(unVaso, cantidadAzucar);
 
         Assert.assertEquals(cantidadAzucar, unVaso.getCantidadDeAzucar());
-        //Assert.assertTrue(unVaso.tieneCafe());
+        Assert.assertTrue(unVaso.tieneCafe());
         Assert.assertTrue(unVaso.tieneAzucar());
         Assert.assertFalse(unVaso.tieneTe());
     }
@@ -28,7 +28,7 @@ public class MaquinaExpendedoraDeBebidasTest {
         maquinaExpendedoraDeBebidas.hacerTeConLecheConNDeAzucar(unVaso, cantidadAzucar);
 
         Assert.assertEquals(cantidadAzucar, unVaso.getCantidadDeAzucar());
-       // Assert.assertFalse(unVaso.tieneCafe());
+        Assert.assertFalse(unVaso.tieneCafe());
         Assert.assertFalse(unVaso.tieneAzucar());
         Assert.assertTrue(unVaso.tieneTe());
     }
