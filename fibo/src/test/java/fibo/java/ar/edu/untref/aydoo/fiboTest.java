@@ -30,16 +30,7 @@ public class fiboTest {
         int esperado = 5;
         int real= fi.fibonacci(5);
         Assert.assertEquals(esperado, real);
- }
-	@Test
-	public void prueba4() {
-		fibo fi = new fibo();
-		Assert.assertEquals(55,fi.fibonacci(10));
-	}
-	@Test
-	public void prueba5() {
-		fibo fi = new fibo();
-		Assert.assertEquals(-1,fi.fibonacci(-1));
-	}
+ 	}
+	
 
 }

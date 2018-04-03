@@ -16,7 +16,7 @@ public static void main(String[] args) {
 	System.out.print("<");
 	System.out.print(N);
 	System.out.print(">:");
-        for (int i = 0; i <= N; i++) {
+        for (int i = 0; i < N; i++) {
             System.out.print(fibonacci(i)+ " ");
     }
     System.out.println();  
