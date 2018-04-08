@@ -6,6 +6,14 @@ public class Crucero {
 	private Posicion[][] posiciones;
 	private boolean esAgua;
 	
+	 public Crucero() {
+	        this.posiciones = new Posicion[10][10];
+	        for (int i = 0; i < posiciones.length; i++) {
+	            for (int j = 0; j < posiciones.length; j++) {
+	                this.posiciones[i][j] = new Posicion(i, j);
+	            }
+	        }
+	 }
 	
 	public void setLongitud(int longitud) {
 		this.longitud = longitud;
@@ -17,7 +25,7 @@ public class Crucero {
 	}
 
 	public void atacarPosicion(Posicion posicion) {
-		
+		this.posiciones[posicion.getPosicionHorizontal()][posicion.getPosicionVertical()].setEsAgua(true);		
 	}
 
 	public boolean getResultadoDeAtaqueVacio() {

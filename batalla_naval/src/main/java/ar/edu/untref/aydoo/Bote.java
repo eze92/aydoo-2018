@@ -30,5 +30,9 @@ public class Bote {
 	public int getLongitud() {
 		return this.longitud;		
 	}
+	public boolean getResultadoDeAtaqueAcertado() {
+		// TODO Auto-generated method stub
+		return true;
+	}
 
 }
