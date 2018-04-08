@@ -48,6 +48,15 @@ public class TestBatallaNaval {
     	Assert.assertTrue(unBote.getResultadoDeAtaqueVacio(posicion.esAgua()));
     	}
     	
-    }
+    @Test 
+    public void establerLongitudDelBote() {
+    	Bote unBote = new Bote();
+    	int longitud = 1;
+    	unBote.setLongitud(longitud);
+    	unBote.getLongitud();
+    	Assert.assertEquals(1, unBote.getLongitud());
+    } 	
+    
+}
 
 
