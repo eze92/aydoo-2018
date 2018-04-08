@@ -65,6 +65,13 @@ public class TestBatallaNaval {
     	unCrucero.getLongitud();
     	Assert.assertEquals(2, unCrucero.getLongitud());
     }
+    @Test
+    public void CruceroAtacaAUnaPosicionVacia() {
+    	Crucero unCrucero = new Crucero();
+    	Posicion posicion = new Posicion(3,3);
+    	unCrucero.atacarPosicion(posicion);
+    	Assert.assertTrue(unCrucero.getResultadoDeAtaqueVacio(posicion.esAgua()));
+    	}
 }
 
 
