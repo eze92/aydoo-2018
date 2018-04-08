@@ -57,6 +57,14 @@ public class TestBatallaNaval {
     	Assert.assertEquals(1, unBote.getLongitud());
     } 	
     
+    @Test
+    public void establecerLongitudDelCrucero() {
+    	Crucero unCrucero = new Crucero();
+    	int longitud = 2;
+    	unCrucero.setLongitud(longitud);
+    	unCrucero.getLongitud();
+    	Assert.assertEquals(2, unCrucero.getLongitud());
+    }
 }
 
 

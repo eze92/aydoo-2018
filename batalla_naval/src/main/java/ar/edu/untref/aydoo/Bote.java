@@ -2,7 +2,7 @@ package ar.edu.untref.aydoo;
 
 public class Bote {
 
-	private int longitud = 1;
+	private int longitud ;
 	
 	public void atacarPosicion(Posicion posicion) {
 		// TODO Auto-generated method stub
