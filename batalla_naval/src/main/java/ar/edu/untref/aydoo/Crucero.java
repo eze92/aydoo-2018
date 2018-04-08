@@ -3,6 +3,8 @@ package ar.edu.untref.aydoo;
 public class Crucero {
 
 	private int longitud;
+	private Posicion[][] posiciones;
+	
 	
 	public void setLongitud(int longitud) {
 		this.longitud = longitud;
@@ -14,7 +16,6 @@ public class Crucero {
 	}
 
 	public void atacarPosicion(Posicion posicion) {
-		// TODO Auto-generated method stub
 		
 	}
 

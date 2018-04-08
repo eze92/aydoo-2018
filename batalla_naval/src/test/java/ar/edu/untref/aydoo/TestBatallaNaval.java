@@ -45,7 +45,7 @@ public class TestBatallaNaval {
     	Bote unBote = new Bote();
     	Posicion posicion = new Posicion(3,3);
     	unBote.atacarPosicion(posicion);
-    	Assert.assertTrue(unBote.getResultadoDeAtaqueVacio(posicion.esAgua()));
+    	Assert.assertFalse(unBote.getResultadoDeAtaqueVacio());
     	}
     	
     @Test 
@@ -71,7 +71,8 @@ public class TestBatallaNaval {
     	Posicion posicion = new Posicion(3,3);
     	unCrucero.atacarPosicion(posicion);
     	Assert.assertTrue(unCrucero.getResultadoDeAtaqueVacio(posicion.esAgua()));
-    	}
+    }
+    
 }
 
 
