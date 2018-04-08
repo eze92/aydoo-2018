@@ -28,6 +28,18 @@ public class TestBatallaNaval {
         Assert.assertTrue(unTablero.estaDisponible(posicion));
 
     }
+    @Test
+    public void ponerCruceroEnTablero() {
+    	Crucero unCrucero = new Crucero();
+    	Tablero unTablero = new Tablero();
+    	Posicion posicion = new Posicion(2,2);
+    	
+    	unTablero.ponerCrucero(unCrucero,posicion);
+    	
+    	Assert.assertFalse(unTablero.estaDisponible(posicion));
+    	
+    	
+    }
 
 }
 
