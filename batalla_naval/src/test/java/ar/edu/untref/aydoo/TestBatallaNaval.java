@@ -40,6 +40,14 @@ public class TestBatallaNaval {
     	
     	
     }
+    @Test
+    public void boteAtacaAUnaPosicionVacia() {
+    	Bote unBote = new Bote();
+    	Posicion posicion = new Posicion(3,3);
+    	unBote.atacarPosicion(posicion);
+    	Assert.assertTrue(unBote.getResultadoDeAtaqueVacio(posicion.esAgua()));
+    	}
+    	
+    }
 
-}
 
