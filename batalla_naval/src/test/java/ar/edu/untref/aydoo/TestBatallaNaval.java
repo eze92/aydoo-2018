@@ -33,9 +33,7 @@ public class TestBatallaNaval {
     	Crucero unCrucero = new Crucero();
     	Tablero unTablero = new Tablero();
     	Posicion posicion = new Posicion(2,2);
-    	
-    	unTablero.ponerCrucero(unCrucero,posicion);
-    	
+    	unTablero.ponerCrucero(unCrucero,posicion);   	
     	Assert.assertFalse(unTablero.estaDisponible(posicion));
     	
     	
@@ -70,7 +68,7 @@ public class TestBatallaNaval {
     	Crucero unCrucero = new Crucero();
     	Posicion posicion = new Posicion(3,3);
     	unCrucero.atacarPosicion(posicion);
-    	Assert.assertTrue(unCrucero.getResultadoDeAtaqueVacio(posicion.esAgua()));
+    	Assert.assertFalse(unCrucero.getResultadoDeAtaqueVacio());
     }
     
 }

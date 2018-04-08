@@ -4,6 +4,7 @@ public class Crucero {
 
 	private int longitud;
 	private Posicion[][] posiciones;
+	private boolean esAgua;
 	
 	
 	public void setLongitud(int longitud) {
@@ -19,9 +20,8 @@ public class Crucero {
 		
 	}
 
-	public boolean getResultadoDeAtaqueVacio(boolean esAgua) {
-		// TODO Auto-generated method stub
-		return true;
+	public boolean getResultadoDeAtaqueVacio() {
+		return this.esAgua == true;
 	}
 
 }
