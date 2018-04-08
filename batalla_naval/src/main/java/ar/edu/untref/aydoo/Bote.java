@@ -3,12 +3,19 @@ package ar.edu.untref.aydoo;
 public class Bote {
 
 	private int longitud ;
-	private Posicion posicion;
+	private Posicion[][] posiciones;
 	private boolean esAgua;
 	
+	 public Bote() {
+	        this.posiciones = new Posicion[10][10];
+	        for (int i = 0; i < posiciones.length; i++) {
+	            for (int j = 0; j < posiciones.length; j++) {
+	                this.posiciones[i][j] = new Posicion(i, j);
+	            }
+	        }
+	 }
 	public void atacarPosicion(Posicion posicion) {
-		// TODO Auto-generated method stub
-		
+		this.posiciones[posicion.getPosicionHorizontal()][posicion.getPosicionVertical()].setEsAgua(true);		
 	}
 
 	public boolean getResultadoDeAtaqueVacio() {
@@ -21,9 +28,7 @@ public class Bote {
 	}
 
 	public int getLongitud() {
-		return this.longitud;
-		// TODO Auto-generated method stub
-		
+		return this.longitud;		
 	}
 
 }
