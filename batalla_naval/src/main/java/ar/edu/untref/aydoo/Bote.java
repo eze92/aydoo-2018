@@ -5,6 +5,7 @@ public class Bote {
 	private int longitud ;
 	private Posicion[][] posiciones;
 	private boolean esAgua;
+	//private Tablero tablero;
 	
 	 public Bote() {
 	        this.posiciones = new Posicion[10][10];
@@ -15,7 +16,7 @@ public class Bote {
 	        }
 	 }
 	public void atacarPosicion(Posicion posicion) {
-		this.posiciones[posicion.getPosicionHorizontal()][posicion.getPosicionVertical()].setEsAgua(true);		
+		this.posiciones[posicion.getPosicionHorizontal()][posicion.getPosicionVertical()].setEsAgua(false);		
 	}
 
 	public boolean getResultadoDeAtaqueVacio() {
@@ -26,13 +27,19 @@ public class Bote {
 		this.longitud = longitud;
 		
 	}
+	public Posicion getPosicionAtaque(Posicion posicion) {
+		return posiciones[posicion.getPosicionHorizontal()][posicion.getPosicionVertical()];
+	}
 
 	public int getLongitud() {
 		return this.longitud;		
 	}
-	public boolean getResultadoDeAtaqueAcertado() {
-		// TODO Auto-generated method stub
-		return true;
+	public boolean getResultadoDeAtaqueAcertado(Posicion posicion,Tablero tablero) { 
+		if(getPosicionAtaque(posicion) == tablero.getPosicionDeBote(posicion)) {
+			return true;
+		}else  {			
+		return false;
 	}
 
+	}
 }

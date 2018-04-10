@@ -26,6 +26,14 @@ public class Tablero {
 	public void ponerCrucero(Crucero unCrucero, Posicion posicion) {
 		this.posiciones[posicion.getPosicionVertical()][posicion.getPosicionHorizontal()].setEsAgua(false);
 	}
-    
+	
+	public Posicion getPosicionDeBote(Posicion posicion) {
+		return this.posiciones[posicion.getPosicionVertical()][posicion.getPosicionHorizontal()];
+	}
+	public Posicion getPosicionDeCrucero(Posicion posicion) {
+		return this.posiciones[posicion.getPosicionVertical()][posicion.getPosicionHorizontal()];
+	}
+	
+
 
 }

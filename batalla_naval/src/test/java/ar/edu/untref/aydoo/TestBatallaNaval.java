@@ -71,11 +71,12 @@ public class TestBatallaNaval {
     	Assert.assertFalse(unCrucero.getResultadoDeAtaqueVacio());
     }
     @Test
-    public void boteAtacaAUnaPosicionYTocaA1Barco() {
+    public void boteAtacaAUnaPosicionYHundirA1Barco() {
     	Bote unBote = new Bote();
     	Posicion posicion = new Posicion(5,5);
+    	Tablero unTablero = new Tablero();
     	unBote.atacarPosicion(posicion);
-    	Assert.assertTrue(unBote.getResultadoDeAtaqueAcertado());
+    	Assert.assertFalse(unBote.getResultadoDeAtaqueAcertado(posicion, unTablero));
     	
     }
    
