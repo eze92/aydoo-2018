@@ -6,6 +6,7 @@ public class Vaso {
 	int cantidadAzucar;
 	boolean cafe;
 	boolean te;
+	boolean leche;
 	
 	public void Vaso() {
 	}
@@ -45,5 +46,8 @@ public class Vaso {
 		 return this.te;
   }
 
+	public void agregarLeche(boolean leche) {
+		this.leche = leche;
+	}	
 
 }
