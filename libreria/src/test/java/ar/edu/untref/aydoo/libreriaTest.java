@@ -16,4 +16,13 @@ public class libreriaTest {
 		Assert.assertEquals(30,unProducto.getPrecio());
 		
 	}
+	@Test
+	public void definirCliente() {
+		Producto unProducto = new Producto();
+		Cliente unCliente = new Cliente("juan","perez","caseros",unProducto);
+		Assert.assertEquals("juan", unCliente.getNombre());
+		Assert.assertEquals("perez", unCliente.getAPellido());
+		Assert.assertEquals("caseros", unCliente.getDireccion());
+		
+	}
 }

@@ -9,7 +9,6 @@ public class Producto {
 	}
 
 	public int getPrecio() {
-		// TODO Auto-generated method stub
 		return this.precio;
 	}
 
