@@ -18,11 +18,19 @@ public class libreriaTest {
 	}
 	@Test
 	public void definirCliente() {
-		Producto unProducto = new Producto();
-		Cliente unCliente = new Cliente("juan","perez","caseros",unProducto);
+		Cliente unCliente = new Cliente("juan","perez","caseros");
 		Assert.assertEquals("juan", unCliente.getNombre());
 		Assert.assertEquals("perez", unCliente.getAPellido());
 		Assert.assertEquals("caseros", unCliente.getDireccion());
 		
+	}
+	@Test
+	public void clienteCompraProducto() {
+		Producto unProducto = new Producto();
+		Cliente unCliente = new Cliente("juan","perez","caseros");
+		unCliente.comprar_Producto(unProducto);
+		int precio = 50;
+		unProducto.agregarPrecio(precio);
+		Assert.assertEquals(50,unProducto.getPrecio() );
 	}
 }
