@@ -34,6 +34,22 @@ public class fibo{
 	
 	public List<Integer> getSucesion() {
         return this.sucesion;
-}
+		}
+	
+	 public String mostrar() {
+	        StringBuffer salida = new StringBuffer("fibo<").append(this.sucesion.size()).append(">: ");
+	        for (Integer eachNumber : this.sucesion) {
+	            salida.append(" ").append(eachNumber);
+	        }
+	        return salida.toString();
+	 }
+	 public String mostrarV() {
+	        StringBuffer salida = new StringBuffer("fibo<").append(this.sucesion.size()).append(">: ");
+	        for (Integer eachNumber : this.sucesion) {
+	        	salida.append("\n");
+	        	salida.append(eachNumber);
+	        }
+	        return salida.toString();
 	}
+}
 
