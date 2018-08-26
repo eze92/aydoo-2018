@@ -1,17 +1,29 @@
 package ar.edu.untref.aydoo;
 
-import junit.framework.Assert;
-
-import java.util.List;
-
+import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
-
+import java.util.List;
 public class fiboTest {
 
 	 @Test
 	    public void getSuccessionShouldReturn5Values() {
-		 List<Integer> resultado = fibo.getFibonacci(5);
+		 List<Integer> resultado = fibo.calculoFibo(5);
 	 }
+	 @Test
+	    public void devuelve5Valores() {
+	        Integer limite = 5;
+	        Boolean estaInvertido = false;
+	        fibo fibonacci = new fibo(limite, estaInvertido);
+	        List<Integer> resultado = fibonacci.getSucesion();
+
+	        int[] actualsValues = new int[resultado.size()];
+	        for (int i = 0; i < resultado.size(); i++) {
+	            actualsValues[i] = resultado.get(i);
+	        }
+	        int[] expectedsValues = new int[]{0, 1, 1, 2, 3};
+	        Assert.assertArrayEquals(expectedsValues, actualsValues);
+	}
 
 }

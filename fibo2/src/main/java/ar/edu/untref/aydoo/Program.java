@@ -13,7 +13,7 @@ public class Program {
 	public static void main(String[] args) {
 
 		 int limite = Integer.valueOf(args[0]);
-	        List<Integer> resultado = fibo.getFibonacci(limite);
+	        List<Integer> resultado = fibo.calculoFibo(limite);
 	        StringBuffer sb = new StringBuffer("fibo<").append(limite).append(">: ");
 	        for (int valor: resultado) {
 	            sb.append(valor).append(" ");
